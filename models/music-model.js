@@ -4,7 +4,9 @@ const Schema=mongoose.Schema;
 //structure for schema
 const MusicSchema=new Schema({
     name:  String,
-    description:String
+    description:String,
+    imageUrl:String,
+    imgPublic_Id:String
 });
 // module.exports =mongoose.model('Music',MusicSchema)
  const Music = mongoose.model("Music", MusicSchema);

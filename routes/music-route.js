@@ -1,9 +1,9 @@
 const express=require('express');
 const router= express.Router();
-const music=require('../controllers/MusicController');
+const music=require('../controllers/music-controller');
 
 
-router.get('/songs',music.getSongs)
+router.get('/music',music.getAllmusic)
 router.post('/music',music.postMusic)
 router.get('/music/:id',music.getMusic)
 router.put('/music/:id',music.updateMusic)
